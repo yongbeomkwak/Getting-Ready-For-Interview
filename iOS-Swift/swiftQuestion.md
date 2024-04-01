@@ -397,6 +397,3 @@
 ## 86. Subscription에 대해서 설명해주세요.
 
 ## Questions Source
-
-- https://www.fullstack.cafe/interview-questions/swift
-- https://github.com/JeaSungLEE/iOSInterviewquestions
