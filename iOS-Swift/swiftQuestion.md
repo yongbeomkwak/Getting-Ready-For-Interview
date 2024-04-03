@@ -1,67 +1,118 @@
 # 스위프트 100문 100답을 목표로!
 
-## 1. 스위프트에서 Extension은 어떻게 사용되나요? (What are Extensions used for in Swift?)
+<details>
+<summary>1. 스위프트에서 Extension은 어떻게 사용되나요? (What are Extensions used for in Swift?) [3] </summary>
+
+<ul>
+  <li> Extension은 클래스, 구조체, 열거형 타입에 새로운 메서드, 프로퍼티 , 생성자를 추가적으로 정의해 사용하기위해 사용됩니다.</li>
+    <li>이 때 저장 프로퍼티는 정의 불가, 연산 프로퍼티만 정의 가능</li>
+      <li>convenience init만 정의</li>
+</ul>
+
+</details>
 
 </br>
 
-## 2. Swift의 upcasting과 downcasting의 차이에 대해서 설명해보세요. (What is the difference between Upcast and Downcast in Swift?)
+<details>
+<summary>2. Swift의 upcasting과 downcasting의 차이에 대해서 설명해보세요. (What is the difference between Upcast and Downcast in Swift?) [2]</summary>
+
+<ul>
+  <li> 서로 상속 관계에서 자식 클래스를 부모 클래스로 타입캐스팅 하는 것이 업 캐스팅 as 를 사용 </li>
+    <li>다운캐스팅도 as 를 사용하지만 다운 캐스팅은 실패할 수도 있기 때문에 as?나 as!를 사용합니다.</li>
+</ul>
+
+</details>
 
 <br>
 
-## 3. == 연산자와 === 연산자는 어떻게 다른가요? (What’s the difference between == and ===?)
+
+<details>
+<summary>3. == 연산자와 === 연산자는 어떻게 다른가요? (What’s the difference between == and ===?) [1] </summary>
+
+<ul>
+  <li> == 연산자는 값을 비교하는데 사용되고, === 연산자는 참조 값을 비교하는데 사용됩니다.</li>
+</ul>
+
+</details>
 
 
 </br>
 
-## 4. Dispatch Queue의 Serial Queue에 대해서 설명해보세요. (What is a Serial Queue?)
+<details>
+<summary>4. Dispatch Queue의 Serial Queue에 대해서 설명해보세요. (What is a Serial Queue?) [1] </summary>
 
-</br>
+<ul>
+  <li> 시리얼 큐는 스레드에 먼저 할당한 작업이 끝나야 대기 중인 작업을 스레드에 할당합니다.</li>
+</ul>
 
-## 5. let과 var의 차이는 무엇인가요? (What is the difference between let and var in Swift?)
-
-
-</br>
-
-## 6. function과 method의 차이를 말해보세요. (What are the differences between functions and methods in Swift?)
-
-</br>
-
-## 7. 커스텀 객체의 배열이 있을 때, 프로퍼티를 기준으로 배열을 어떻게 정렬할 수 있을까요? (How to sort array of custom objects by property value in Swift?)
+</details>
 
 
 </br>
 
-## 8. mutaing 키워드의 의미를 설명해보세요. (What does the Swift mutating keyword mean?)
+<details>
+<summary>5. let과 var의 차이는 무엇인가요? (What is the difference between let and var in Swift?) [1] </summary>
 
-</br>
+<ul>
+  <li> let은  주소에 대한 포인터를 바꿀 수 없다는 의미, var는 값을 변경할 수 있는 변수를 선언하기 위한 명령어입니다.</li>
+</ul>
 
-## 9. 프로토콜과 클래스의 차이를 설명해보세요. (What’s the difference between a protocol and a class in Swift?)
-
-</br>
-
-## 10. Enum에서 raw value와 associated value에 대해 설명해보세요. (In Swift enumerations, what’s the difference between raw values and associated values?)
-
-
-</br>
-
-## 11. inout은 언제 사용하면 좋을까요? (What is a good use case for an inout parameter?)
+</details>
 
 
 </br>
 
-## 12. 연산 프로퍼티와 클로저를 가지는 저장 프로퍼티의 차이를 설명해보세요. (What is the difference between a computed property and a property set to a closure?)
+<details>
+<summary>6. function과 method의 차이를 말해보세요. (What are the differences between functions and methods in Swift?) [1]</summary>
+
+<ul>
+  <li> function은 재사용 가능한 코드 블럭, 메서드는 클래스, 구조체, 열거형 안에 정의된 function</li>
+</ul>
+
+</details>
 
 </br>
 
-## 13. as? 와 as! 차이를 설명해보세요. (What is difference between as?, as! and as in Swift?)
+<details>
+<summary>7. mutaing 키워드의 의미를 설명해보세요. (What does the Swift mutating keyword mean?)[2] </summary>
+
+<ul>
+  <li> 스위프트에서 값 타입 프로퍼티들을 인스턴스 메서드에 의해 수정될 수 없습니다.</li>
+   <li> mutating 키워드가 붙은 메서드를 실행하면 스위프트는 새로운 구조체를 생성해 변경된 프로퍼티의 값을 할당하고 반환해 현재 구조체를 대체합니다. 구조체의 불변성을 지키기 위해 이런 방법을 사용합니다.
+</li>
+
+</ul>
+
+</details>
+
 
 </br>
 
-## 14. 메서드 안에서 언제 self를 사용해야할까요? (When would you use self in a method?)
+<details>
+<summary>8. 프로토콜과 클래스의 차이를 설명해보세요. (What’s the difference between a protocol and a class in Swift?)
+ </summary>
+
+<ul>
+  <li> 클래스는 인스턴스 메서드의 실제 구현체를 가지고 있지만 프로토콜은 메서드의 인터페이스만 가지고 있습니다. 프로토콜이 구현체를 가지게 하려면 프로토콜의 Extension을 만들어 구현체를 작성할 수 있습니다.</li>
+
+</ul>
+
+</details>
+
 
 </br>
 
-## 15. Class와 Struct의 공통점과 차이점을 설명해보세요. (What Classes and Structs have in common in Swift and what are their differences?)
+<details>
+<summary>9. Class와 Struct의 공통점과 차이점을 설명해보세요. (What Classes and Structs have in common in Swift and what are their differences?)
+ </summary>
+
+<ul>
+  <li> Class 와 Struct 모두 프로퍼티를 정의해 데이터를 저장하고 인스턴스를 만들어 객체의 형태로 사용할 수 있습니다. [6]</li>
+
+</ul>
+
+</details>
+
 
 </br>
 
